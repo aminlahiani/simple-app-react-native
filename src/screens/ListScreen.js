@@ -1,9 +1,9 @@
 import React from "react";
-import { Text, StyleSheet  , View ,FlatList} from "react-native";
+import { Text, StyleSheet  , View ,FlatList , Button} from "react-native";
 import { color } from "react-native-reanimated";
 
 
-const  ListScreen = () => {
+const  ListScreen = (props) => {
     const friends = [
               { name : "Friends #1" , age : "20" },
                 { name : "Friends #2" , age : "30" },
@@ -22,6 +22,9 @@ const  ListScreen = () => {
     return (
      <View style={{ backgroundColor: `#dcdcdc`,  justifyContent: 'center', alignItems: 'center' }}>
          <Text style={Styles.text}>List Screen</Text>
+         <Button   onPress={() => props.navigation.navigate('Home')}
+         title="Go Home Demo" 
+      />
          <FlatList  style={Styles.list}
          data={friends} 
         // horizontal
