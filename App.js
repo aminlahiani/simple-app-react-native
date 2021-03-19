@@ -1,6 +1,7 @@
 import { createAppContainer } from 'react-navigation';
 import { createStackNavigator } from 'react-navigation-stack';
 import BoilerplateSreen from './src/screens/BoilerplateSreen';
+import BoxScreen from './src/screens/BoxScreen';
 import ColorScreen from './src/screens/ColorScreen';
 import ComponentScreens from './src/screens/ComponentScreens';
 import HomeScreen from './src/screens/HomeScreen';
@@ -19,7 +20,8 @@ const navigator = createStackNavigator(
     Boilerplate : BoilerplateSreen,
     Color : ColorScreen,
     Square : SquareScreen,
-    Input : UselessTextInput
+    Input : UselessTextInput,
+    Box : BoxScreen
   },
   {
     initialRouteName: 'Home',
