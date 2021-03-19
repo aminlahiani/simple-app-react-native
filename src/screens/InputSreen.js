@@ -9,7 +9,7 @@ const UselessTextInput = () => {
     <SafeAreaView>
       <TextInput
         style={styles.input}
-        onChangeText={onChangeText}
+        onChangeText={newValue => onChangeText(newValue)}
         value={text}
         autoCapitalize="none"
         autoCorrect={false}
